@@ -9,7 +9,7 @@
         .done(function (data){
             console.log(data);
             //si tu es deja connecté:
-            if (data.isConnected === true){
+            if (data.isConnected === false){
                 $('body').append(
                     $('<button />')
                     .html('Déconnexion')
@@ -20,24 +20,28 @@
                         })
                         .done(function() {
                             console.log("pb de connexion");
-                            window.location.href = '/login.html';
+                            window.location.href = 'register.html';
+                        })
+                        .fail(function() {
+                            console.log("pb de connexion");
                         })
                     })
                 )
             } 
         }) 
-        // envoyer les variables issues d'un formulaire HTML à un script PHP en AJAX
+        // quand l utilisateur envoi le formulaire de connexion
         $('#login-form').submit(function() {
             $.ajax({
-                url: $(this).attr('action'), 
+                url: $(this).attr('action'), // json/login.php
                 method: $(this).attr('method'),
                 data: $(this).serialize()
             })
-            //si la combi user/pass est ok :
             .done(function(data) {
+                // si la combi user/password est bonne
                 console.log(data);
-                if(data.success === true) {
-                    window.location.href = '/';
+                if(data.success) {
+                    $('body').href('connecté !');
+                    // window.location.href = 'index.html';
                 } else {
                     $('#message')
                     .html(data.message)

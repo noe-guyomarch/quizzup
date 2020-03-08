@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<title>se connecter</title>
+	<link rel="stylesheet" href="css.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="login.js"></script>
+	
+</head>
+
+<body>
+	<div>
+		<form action="json/login.php" method="POST" id="loginForm">
+			<input type="text" name="username" placeholder="username">
+			<input type="password" name="password" placeholder="password">
+			<button type="submit">login</button>
+		</form>
+	</div>
+	<div id="message" style="display:none"></div>
+	
+</body>
+
+</html>

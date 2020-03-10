@@ -40,7 +40,7 @@
                 // si la combi user/password est bonne
                 console.log(data);
                 if(data.success) {
-                    $('body').href('connecté !');
+                    $('body').html('connecté !');
                     // window.location.href = 'index.html';
                 } else {
                     $('#message')
@@ -48,7 +48,8 @@
                     .fadeIn();
                 }
             })
-            .fail(function() {
+            .fail(function(data) {
+                console.log(data);
                 $('body').html('Erreur fatale');
             });
             return false;

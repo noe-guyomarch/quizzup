@@ -15,7 +15,7 @@ $contentFileJson = file_get_contents("login.json");
 
 $scoreBoard = json_decode($contentFileJson, true);
 
-//regarde si la combinaison user/pass est la meme que dans le json -> success true
+// regarde si la combinaison user/pass est la meme que dans le json -> success true
 foreach ($scoreBoard['users'] as $value){
     if ($value["username"] == $_POST["username"] && $value["password"] == $_POST["password"])
     {
@@ -24,5 +24,5 @@ foreach ($scoreBoard['users'] as $value){
         // echo $value['username']. ' | '.$value['password'];
     }    
 }
-json_encode($obj);
+echo json_encode($obj);
 ?>

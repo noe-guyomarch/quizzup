@@ -1,14 +1,29 @@
 {
-    "users":[
+    "users": [
         {
-            "username": 1,
-            "password": "1"
-            
+            "username": "1",
+            "password": "1",
+            "email": "mail@gmail.com"
         },
         {
             "username": "cpt",
-            "password": "123"
+            "password": "123",
+            "email": "mail@gmail.com"
+        },
+        {
+            "username": "",
+            "password": "",
+            "email": ""
+        },
+        {
+            "username": "11",
+            "password": "11",
+            "email": "11"
+        },
+        {
+            "username": "111",
+            "password": "111",
+            "email": "111"
         }
     ]
 }
-

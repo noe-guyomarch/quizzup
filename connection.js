@@ -8,7 +8,7 @@
         })
         .done(function (data){
             console.log(data);
-            //si tu es deja connecte, affiche un btn de deconnexion qui deconnecte
+            //TODO si tu es deja connecte, affiche la page d ACCUEIL
             if (data.isConnected){
                 $('body').append(
                     $('<button />')
@@ -30,7 +30,7 @@
             } 
         })
 
-        // quand l utilisateur envoi le formulaire de connexion
+        // quand l utilisateur envoi le formulaire de CONNEXION
         $('#login-form').submit(function() {
             $.ajax({
                 url: $(this).attr('action'), // json/login.php
@@ -41,7 +41,7 @@
                 // si la combi user/password est bonne
                 console.log(data.success);
                 if(data.success) {
-                    $('body').html('connecté !');// regiriger ver l'accueil
+                    $('body').html('connecté !');// regiriger ver l'ACCUEIL
                 } else {
                     $('#message')
                     .html(data.message)
@@ -55,6 +55,7 @@
             return false;
         })
 
+        // quand l utilisateur envoie le formulaire d INSCRIPTION
         $('#register-form').submit(function() {
             $.ajax({
                 url: $(this).attr('action'), // json/register.php
@@ -62,7 +63,7 @@
                 data: $(this).serialize()
             })
             .done(function(data) {
-                // si l inscription est bonne
+                // si l inscription est bonne retour a la CONNEXION
                 if(data.success) {
                     window.location.href = 'index.html';
                 } else {

@@ -15,17 +15,7 @@ $contentFileJson = file_get_contents("account.json");
 
 $scoreBoard = json_decode($contentFileJson, true);
 
-// regarde si la combinaison user/pass est la meme que dans le account.json
-foreach ($scoreBoard['users'] as $value){
-    if ($value["username"] == $_POST["username"] && $value["password"] == $_POST["password"])
-    {
-        // definit la session
-        $_SESSION['username'] = $value["username"];
-        $_SESSION['password'] = $value["password"];   
 
-        $obj ->success = true;
-        break;
-    }    
 }
 echo json_encode($obj);
 ?>

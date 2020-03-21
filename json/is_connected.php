@@ -9,10 +9,15 @@ session_start();
 
 $obj = new stdClass();
 
+
 if (isset($_SESSION['username'], $_SESSION['password'])){
     $obj->isConnected = true;
+    
+    $obj ->sessionUser = $_SESSION['username'];
+    $obj ->sessionPassword = $_SESSION['password'];
 }else {
     $obj->isConnected = false;
 }
+
 echo json_encode($obj); // renvoie l objet $obj
 ?>

@@ -5,22 +5,25 @@
 	<meta charset="utf-8">
 	<title>se connecter</title>
 	<link rel="stylesheet" href="css.css">
+
+	<!-- scripts js -->
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="login.js"></script>
+	<script src="connection.js"></script>
 	
 </head>
 
 <body>
-	<div>
+	<!-- formulaire de login -->
+	<div id="connect-interface">
 		<form action="json/login.php" method="POST" id="login-form">
 			<input type="text" name="username" placeholder="username">
 			<input type="password" name="password" placeholder="password">
-			<button type="submit">login</button>
+			<button type="submit">Connexion</button>
+
+			<button id="register-btn">S'inscrire</button>
 		</form>
 	</div>
 	<div id="message" style="display:none"></div>
 	
 </body>
-
 </html>

@@ -2,23 +2,24 @@
 <html lang="fr">
 
 <head>
-  <meta charset="utf-8">
-  <title>Inscription</title>
-  <link rel="stylesheet" href="css.css">
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="connection.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<meta charset="utf-8">
+	<title>Inscription</title>
+	<link rel="stylesheet" href="css.css">
+
+	<!-- script -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="connectionManager.js"></script>
 
 </head>
 
 <body>
-  <form action="json/register.php" method="POST" id="register-form">
-    <input type="text" name="email" placeholder="adresse email">
-    <input type="text" name="username" placeholder="username">
-    <input type="password" name="password" placeholder="password">
-    <button type="submit">S'inscrire</button>
-  </form>
-  <div id="message" style="display:none"></div>
+	<form action="json/register.php" method="POST" id="register-form">
+		<input type="text" name="email" placeholder="adresse email">
+		<input type="text" name="username" placeholder="username">
+		<input type="password" name="password" placeholder="password">
+		<button type="submit">S'inscrire</button>
+	</form>
+	<div id="message" style="display:none"></div>
 
 </body>
 

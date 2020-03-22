@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <title>menu</title>
@@ -9,20 +10,51 @@
     <script src="isConnected.js"></script>
     <script src="menuManager.js"></script>
 </head>
+
 <body>
     <!-- TODO  faire une navbar
     gerer les boutons de défilement -->
 
     <div class="main-content">
 
-        <div class="section-content">
-            <h2 class="section-title">Tous les quizs</h2>
-            
-            <div class="quiz-content">
+        <div class="section-container"> 
+            <div class="title-container">        
+                 <h2 class="section-title">Tous les quizs</h2>
+            </div>
+
+            <!-- contient l affichage de tous les quizs -->
+            <div class="quiz-container">
+                
+                <!-- contient les liens individuels ver les quizs -->
+                <div class="item-container">
+                    <a href="">
+                        <div class="item">
+                            <img class="quiz-img" src="" alt="">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="item-container">
+                    <a href="">
+                        <div class="item">
+                            <img class="quiz-img" src="" alt="">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="item-container">
+                    <a href="">
+                        <div class="item">
+                            <img class="quiz-img" src="" alt="">
+                        </div>
+                    </a>
+                </div>
 
             </div>
+            
         </div>
     </div>
-    
+
 </body>
+
 </html>

@@ -36,7 +36,7 @@ if (file_exists($accountFile)) {
         file_put_contents($accountFile, json_encode($scoreBoard));
         $obj ->success = true;
     }else{
-        $obj ->message = "nom d'utilisateur deaja existant";
+        $obj ->message = "nom d'utilisateur deja existant";
         $obj ->success = false;
     }
 }

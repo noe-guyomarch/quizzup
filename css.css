@@ -7,3 +7,19 @@ div#loginForm{
         flex-direction: column;
 
 }
+img{
+        max-width: 100%;
+        width: 250px;
+        height: auto;
+        border-radius: 16px;
+}
+.main-content{
+        display: flex;
+        flex-direction: column;
+}
+.quiz-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+}

@@ -7,9 +7,9 @@
         
 
         // $(document).ready(function(){
-        //     var CheminComplet = document.location.href;
-        //     var CheminRepertoire  = CheminComplet.substring( 0 ,CheminComplet.lastIndexOf( "/" ) );
-        //     var NomDuFichier     = CheminComplet.substring(CheminComplet.lastIndexOf( "/" )+1 );
+        //     let CheminComplet = document.location.href;
+        //     let CheminRepertoire  = CheminComplet.substring( 0 ,CheminComplet.lastIndexOf( "/" ) );
+        //     let NomDuFichier     = CheminComplet.substring(CheminComplet.lastIndexOf( "/" )+1 );
         //     alert ('NomDuFichier : \n'+NomDuFichier+ ' \n\n CheminRepertoire : \n' +CheminRepertoire+ ' \n\n CheminComplet :\n ' +CheminComplet);            
         // })
     });

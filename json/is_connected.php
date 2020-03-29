@@ -20,5 +20,7 @@ if (isset($_SESSION['username'], $_SESSION['password'])){
     $obj->isConnected = false;
 }
 
+// $obj ->isConnected = isset($_SESSION);
+
 echo json_encode($obj); // renvoie l objet $obj
 ?>

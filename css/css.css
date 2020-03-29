@@ -1,0 +1,43 @@
+body{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        
+        display: flex;
+        justify-content: space-evenly;
+        font-family: 'Dancing Script', cursive;
+
+}
+div#loginForm{
+        display: flex;
+        flex-direction: column;
+
+}
+.quizThumbnail{
+        max-width: 100%;
+        width: 370px;
+        height: auto;
+        border-radius: 12px;
+}
+#mainContent{
+        display: flex;
+        flex-direction: column;
+}
+.sectionContainer{
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+}
+.sectionTitle{
+        margin-top: 50px;
+        margin-bottom: 30px;
+}
+.itemContainer{
+        margin-right: 12px;
+}
+.quizContainer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+}

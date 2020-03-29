@@ -2,7 +2,7 @@
 
 (function(){
     'use strict';
-    $(() =>{
+    $(() =>{	
         $.ajax({
             url: 'json/is_connected.php',
             method: 'GET'
@@ -28,10 +28,11 @@
 				}
 
 				// si on est connecté dans le MENU, affiche un boutton de DECONNEXION
-                else if ( currentWindow == 'menu.html'){
-					$('body').append(
+                else if (currentWindow == 'menu.html'){
+					$('header').append(
 						$('<button />')
 						.html('Déconnexion')
+						.attr('class', 'logoutBtn')
 						.click(function(){
 							$.ajax({
 								url: 'json/logout.php',

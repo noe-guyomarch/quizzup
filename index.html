@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>se connecter</title>
-	<link rel="stylesheet" href="css.css">
+	<link rel="stylesheet" href="css/index.css">
 
 	<!-- scripts js -->
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -15,16 +15,33 @@
 
 <body>
 	<!-- formulaire de login -->
-	<div id="connect-interface">
-		<form action="json/login.php" method="POST" id="login-form">
-			<input type="text" name="username" placeholder="username">
-			<input type="password" name="password" placeholder="password">
-			<button type="submit" id="login-btn">Connexion</button>
+	<div id="entireContainer">
+		<div class="leftContainer">
+			<a href=""></a>
+		</div>
 
-			<button type="button" id="register-btn">S'inscrire</button>
-		</form>
+		<div class="rightContainer">
+			<form action="json/login.php" method="POST" id="login-form">
+
+				<div class="loginForm">
+					<h2>Se connecter</h2>
+					<div class="inputContainer">
+						<input class="inputField" type="text" name="username" placeholder="NOM D'UTILISATEUR">
+					</div>
+	
+					<div class="inputContainer">
+						<input class="inputField" type="password" name="password" placeholder="MOT DE PASSE">
+					</div>
+	
+					<button id="inputSubmit" type="submit" id="loginBtn">Connexion</button>
+					
+					<button type="button" id="registerBtn">S'inscrire</button>
+				</div>
+			</form>
+		</div>
+
+		<div id="message" style="display:none"></div>
 	</div>
-	<div id="message" style="display:none"></div>
 	
 </body>
 </html>

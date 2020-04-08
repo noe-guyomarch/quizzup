@@ -51,9 +51,7 @@
             return false;
         })
 
-        $('#register-btn').click(function(){
-            window.location.href = 'register.html';
-        })
+
 
         // $(document).ready(function(){
         //     let CheminComplet = document.location.href;

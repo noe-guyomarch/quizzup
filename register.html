@@ -4,23 +4,53 @@
 <head>
 	<meta charset="utf-8">
 	<title>Inscription</title>
-	<link rel="stylesheet" href="css.css">
 
-	<!-- script -->
+	<!-- links -->
+	<link rel="stylesheet" href="css/index.css">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+	<!-- links -->
+
+	<!-- script js -->
+	<script src="https://kit.fontawesome.com/fe664ea98e.js" crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<script src="connectionManager.js"></script>
+	<!-- script js -->
 
 </head>
 
 <body>
-	<form action="json/register.php" method="POST" id="register-form">
-		<input type="text" name="email" placeholder="adresse email">
-		<input type="text" name="username" placeholder="username">
-		<input type="password" name="password" placeholder="password">
-		<button type="submit">S'inscrire</button>
-	</form>
-	<div id="message" style="display:none"></div>
 
+	<div id="entireContainer">
+
+		<div id="registerForm">
+			<form action="json/register.php" method="POST">
+		
+				<div class="Form">
+					<h2 id="Title">S'inscrire</h2>
+		
+					<div class="inputContainer">
+						<i class="fas fa-envelope"></i>
+						<input class="inputField" type="text" name="email" placeholder="Adresse email">
+					</div>
+		
+					<div class="inputContainer">
+						<i class="fas fa-user"></i>
+						<input class="inputField" type="text" name="username" placeholder="Nom d'utilisateur">
+					</div>
+		
+					<div class="inputContainer">
+						<i class="fas fa-lock"></i>
+						<input class="inputField" type="password" name="password" placeholder="Mot de passe">
+					</div>
+		
+					<button id="inputSubmit" type="submit">S'inscrire</button>
+		
+				</div>
+			</form>
+		</div>
+
+		<div id="message" style="display:none"></div>
+	</div>
 </body>
 
 </html>

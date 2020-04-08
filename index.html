@@ -3,39 +3,47 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>se connecter</title>
+	<title>Se connecter</title>
+
+	<!-- links -->
 	<link rel="stylesheet" href="css/index.css">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+	<!-- links -->
 
 	<!-- scripts js -->
+	<script src="https://kit.fontawesome.com/fe664ea98e.js" crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<script src="isConnected.js"></script>
 	<script src="connectionManager.js"></script>
-	
+	<!-- scripts js -->
+
 </head>
 
 <body>
 	<!-- formulaire de login -->
 	<div id="entireContainer">
 		<div class="leftContainer">
-			<a href=""></a>
+			<img src="src/img/computer-ico.png" alt="">
 		</div>
 
 		<div class="rightContainer">
-			<form action="json/login.php" method="POST" id="login-form">
+			<form action="json/login.php" method="POST">
 
-				<div class="loginForm">
-					<h2>Se connecter</h2>
+				<div class="Form">
+					<h2 id="Title">Se connecter</h2>
 					<div class="inputContainer">
-						<input class="inputField" type="text" name="username" placeholder="NOM D'UTILISATEUR">
+						<i class="fas fa-user"></i>
+						<input class="inputField" type="text" name="username" placeholder="Nom d'utilisateur">
 					</div>
 	
 					<div class="inputContainer">
-						<input class="inputField" type="password" name="password" placeholder="MOT DE PASSE">
+						<i class="fas fa-lock"></i>
+						<input class="inputField" type="password" name="password" placeholder="Mot de passe">
 					</div>
 	
-					<button id="inputSubmit" type="submit" id="loginBtn">Connexion</button>
+					<button id="inputSubmit" type="submit" id="loginBtn">CONNEXION</button>
 					
-					<button type="button" id="registerBtn">S'inscrire</button>
+					<a id="registerLink" href="register.html">S'inscrire ➡</a>
 				</div>
 			</form>
 		</div>

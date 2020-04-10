@@ -46,10 +46,10 @@ body{
 .leftContainer, .rightContainer{
     padding: 50px;
 }
-
 .inputContainer, #inputSubmit{
     height: 60px;
     border-radius: 30px;
+    width: 75%;
 }
 #registerForm{ 
     width: 50%; 
@@ -64,6 +64,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 }
 
 form{
@@ -83,8 +84,12 @@ form{
 }
 
 #inputSubmit{
+    
     border: none;
     background-color: var(--submit_bg);
+}
+#inputSubmit:focus{
+    outline: none;
 }
 
 #inputSubmit:hover {
@@ -147,4 +152,12 @@ i {
 img{
     max-width: 100%;
 	height: auto;
+}
+
+#message{
+    height: 19px;
+    text-align: center;
+    color: red;
+    font-style: oblique;
+    font-weight: bold;
 }

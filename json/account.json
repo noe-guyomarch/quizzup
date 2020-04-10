@@ -1,1 +1,24 @@
-{"users":[{"username":"1","password":"1","email":"mail@gmail.com"},{"username":"cpt","password":"123","email":"mail@gmail.com"},{"username":"11","password":"11","email":"11"},{"username":"111","password":"111","email":"111"},{"username":"1111","password":"1111","email":"1111"},{"username":"fjvbndfjvh","password":"sffdvjfv","email":"dfhvbbv"},{"username":"GFCGFC","password":"FGCGFC","email":"FCGFC"},{"username":"anaelle","password":"guy","email":"FVUJDFV"},{"username":"","password":"","email":""},{"username":"kjnjkln","password":"kjnljk","email":"kjnkjn"},{"username":"oijoij","password":"lkjlj","email":"nkjnn"},{"username":"uygiuyg","password":"uygiuyg","email":"jhjkh ui"},{"username":"oiuhoiuh","password":"oiuhoiuh","email":"iuhiouh"},{"username":"poijpoij","password":"po\u00ee\u00f4i","email":"oiuhoiuh"},{"username":"ytfuytf","password":"iouyoiuyo","email":"tfyfuytf"}]}
+{
+    "users": [
+        {
+            "username": "1",
+            "password": "1",
+            "email": "mail@gmail.com"
+        },
+        {
+            "username": "cpt",
+            "password": "123",
+            "email": "mail@gmail.com"
+        },
+        {
+            "username": "11",
+            "password": "11",
+            "email": "11"
+        },
+        {
+            "username": "",
+            "password": "",
+            "email": ""
+        }
+    ]
+}

@@ -27,7 +27,7 @@
 		</div>
 
 		<div class="rightContainer">
-			<form action="json/login.php" method="POST">
+			<form action="json/login.php" method="POST" id="login-form">
 
 				<div class="Form">
 					<h2 id="Title">Se connecter</h2>
@@ -41,14 +41,14 @@
 						<input class="inputField" type="password" name="password" placeholder="Mot de passe">
 					</div>
 	
-					<button id="inputSubmit" type="submit" id="loginBtn">CONNEXION</button>
-					
+					<button id="inputSubmit" type="submit">CONNEXION</button>
+					<div id="message"></div>
+
 					<a id="registerLink" href="register.html">S'inscrire ➡</a>
 				</div>
 			</form>
 		</div>
 
-		<div id="message" style="display:none"></div>
 	</div>
 	
 </body>

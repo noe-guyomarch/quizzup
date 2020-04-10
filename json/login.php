@@ -10,6 +10,7 @@ $obj = new stdClass;
 
 $obj ->message = 'mauvais nom d\'utilisateur ou mot de passe';
 $obj ->success = false;
+$obj ->mail = "noeguyomarchpro@gmail.com";
 
 $contentFileJson = file_get_contents("account.json");
 

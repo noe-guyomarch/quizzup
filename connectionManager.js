@@ -16,13 +16,14 @@
                     window.location.href = 'menu.html';// regiriger ver l'ACCUEIL
                 } else {
                     $('#message')
+                    .fadeOut()
                     .html(data.message)
-                    .fadeIn();
+                    .fadeIn()
                 }
             })
             .fail(function(data) {
                 console.log(data);
-                $('body').html('Erreur fatale');
+                $('body').html('Erreur du coté serveur. /r Envoyez un mail a ' + data.mail + ' pour plus plus d\'informations.');
             });
             return false;
         })
@@ -39,14 +40,15 @@
                 if(data.success) {
                     window.location.href = 'index.html';
                 } else {
-                    $('#message')
-                    .html(data.message)
-                    .fadeIn();
+                    $('#message').fadeOut()
+                    .fadeOut()
+                    .html(data.message)     
+                    .fadeIn()
                 }
             })
             .fail(function(data) {
                 console.log(data);
-                $('body').html('Erreur fatale');
+                $('body').html('Erreur du coté serveur. /r Envoyez un mail a ' + data.mail + ' pour plus plus d\'informations.');
             });
             return false;
         })

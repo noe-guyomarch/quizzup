@@ -23,14 +23,14 @@
 	<div id="entireContainer">
 
 		<div id="registerForm">
-			<form action="json/register.php" method="POST">
+			<form action="json/register.php" method="POST" id="register-form">
 		
 				<div class="Form">
 					<h2 id="Title">S'inscrire</h2>
 		
 					<div class="inputContainer">
 						<i class="fas fa-envelope"></i>
-						<input class="inputField" type="text" name="email" placeholder="Adresse email">
+						<input class="inputField" type="email" name="email" placeholder="Adresse email">
 					</div>
 		
 					<div class="inputContainer">
@@ -44,12 +44,11 @@
 					</div>
 		
 					<button id="inputSubmit" type="submit">S'inscrire</button>
-		
+					<div id="message"></div>
 				</div>
 			</form>
 		</div>
 
-		<div id="message" style="display:none"></div>
 	</div>
 </body>
 

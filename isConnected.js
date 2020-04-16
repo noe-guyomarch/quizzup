@@ -2,13 +2,14 @@
 
 (function(){
     'use strict';
-    $(() =>{	
+    $(() =>{
+
         $.ajax({
             url: 'json/is_connected.php',
             method: 'GET'
         })
         .done(function (data){
-            console.log(data);// affiche les donnes de session pour debug
+            //console.log(data);// affiche les donnes de session pour debug
 
             // stockage du chemin de la page en cours
             let fullPath = document.location.href;
@@ -42,13 +43,18 @@
 								console.log("logout");
 								window.location.href = 'index.html';
 							})
-							.fail(function() {
-								console.log("pb de connexion");
-							})
+							.fail(function(data) {
+								console.log(data);
+								$('body').html('Erreur du coté serveur. <br/> Envoyez un mail au proprietaire du site pour plus plus d\'informations.');
+							});
 						})
 					)
                 }
 			}
-        })
+		})
+		.fail(function(data) {
+            console.log(data);
+            $('body').html('Erreur du coté serveur. <br/> Envoyez un mail au proprietaire du site pour plus plus d\'informations.');
+        });
     });
 }) ();

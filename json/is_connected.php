@@ -17,7 +17,7 @@ if (isset($_SESSION['username'], $_SESSION['password'])){
     $obj ->sessionUser = $_SESSION['username'];
     $obj ->sessionPassword = $_SESSION['password'];
 }else {
-    $obj->isConnected = false;
+    $obj ->isConnected = false;
 }
 
 // $obj ->isConnected = isset($_SESSION);

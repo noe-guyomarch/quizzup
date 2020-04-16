@@ -1,0 +1,116 @@
+{
+    "quiz": [
+        {
+            "quizName": "bigflo",
+            "question":[
+                {
+                    "idQuestion": "1",
+                    "questionMessage": "BigFlo a déjà signé une jambe de bois.",
+                    "answer": "vrai",
+                    "answerMessage": "Lors d’un concert, un fan a demandé à BigFlo de signer sa jambe de bois."
+                },
+                {
+                    "idQuestion": "2",
+                    "questionMessage": "Les frères ont déjà signé le bocal d’un poisson rouge.",
+                    "answer": "vrai",
+                    "answerMessage": "Lors d’un concert, BigFlo et Oli ont eu l’occasion de signer le bocal d’un poisson rouge s’appelant T-Rex."
+                },
+                {
+                    "idQuestion": "3",
+                    "questionMessage": "Le meilleur ami de BigFlo est un pompier",
+                    "answer": "faux",
+                    "answerMessage": "Le meilleur ami de BigFlo, Antoine, est dentiste! D’ailleurs, la référence se retrouve dans Nous Aussi 2."
+                },
+                {
+                    "idQuestion": "4",
+                    "questionMessage": "L’album de rap français le plus écouté par les frères est Cinquième As: Fifth Ace de MC Solaar.",
+                    "answer": "faux",
+                    "answerMessage": "L’album le plus écouté par BigFlo et Oli est L’École du micro d’argent de IAM."
+                },
+                {
+                    "idQuestion": "5",
+                    "questionMessage": "Ils ont déjà dormi au Zénith de Toulouse",
+                    "answer": "vrai",
+                    "answerMessage": "Les frères du rap ont décidé de dormir avec leurs amis et leurs proches au Zénith de Toulouse pour célébrer leur tournée!"
+                },
+                {
+                    "idQuestion": "6",
+                    "questionMessage": "Oli a déjà eu les cheveux roses",
+                    "answer": "faux",
+                    "answerMessage": "Oli n’a jamais eu les cheveux roses, mais il a déjà eu les cheveux blonds!"
+                },
+                {
+                    "idQuestion": "7",
+                    "questionMessage": "Les deux frères ont déjà pris un égoportrait avec Daniel Radcliffe!",
+                    "answer": "vrai",
+                    "answerMessage": "Les frères ont eu l’occasion de le croiser à la sortie d’un théâtre à New York!"
+                },
+                {
+                    "idQuestion": "8",
+                    "questionMessage": "BigFlo a déjà oublié d’apporter des pantalons en tournée!",
+                    "answer": "vrai",
+                    "answerMessage": "Souliers, pantalons, sac… BigFlo oublie toujours quelque chose lorsqu’il part en tournée!"
+                }            
+            ]
+        },
+        {
+            "quizName": "famoustreet",
+            "question":[
+                {
+                    "idQuestion": "1",
+                    "questionMessage": "Bourbon Street doit son nom à ses nombreux bistros qui servaient du bourbon, un whisky américain.",
+                    "answer": "faux",
+                    "answerMessage": "Street doit son nom à la dynastie des Bourbons qui a régné sur plusieurs pays d’Europe, dont la France. Bourbon Street se trouve au cœur du quartier français de La Nouvelle-Orléans, dans l’État de la Louisiane, une ancienne colonie française."
+                },
+                {
+                    "idQuestion": "2",
+                    "questionMessage": "Malgré son nom d’origine italienne, la Fondamenta San Mauro se trouve en Grèce.",
+                    "answer": "faux",
+                    "answerMessage": "La Fondamenta San Mauro se trouve à Burano, une île au nord de Venise. Burano est composée de quatre îlots séparés par  trois canaux, bordés par des maisons aux façades colorées."
+                },
+                {
+                    "idQuestion": "3",
+                    "questionMessage": "Le poète Federico García Lorca aurait dit de la Rambla de Barcelone : « C’est la seule rue au monde que j’aurais aimé ne jamais voir se finir. »",
+                    "answer": "vrai",
+                    "answerMessage": "La Rambla est une avenue emblématique de Barcelone, capitale de la Catalogne en Espagne. Elle se compose de deux voies carrossables séparées par une large voie piétonne bordée d’arbres."
+                },
+                {
+                    "idQuestion": "4",
+                    "questionMessage": "La rue Khao San, à Bangkok, est l’un des centres de la mode thaïlandaise.",
+                    "answer": "faux",
+                    "answerMessage": "La rue Khao San, à Bangkok en Thaïlande, est l’un des rendez-vous les plus courus des touristes internationaux à la recherche d’un endroit où dormir à peu de frais."
+                }
+            ]
+        },
+        {
+            "quizName": "rockstar",
+            "question":[
+                {
+                    "idQuestion": "1",
+                    "questionMessage": "Stevie Nicks est la première femme à avoir été intronisée au Rock and Roll Hall of fame.",
+                    "answer": "faux",
+                    "answerMessage": "Elle était cependant la première à y être intronisée deux fois : une fois avec son groupe Fleetwood Mac, et une fois en tant qu'artiste solo, en 2019."
+                },
+                {
+                    "idQuestion": "2",
+                    "questionMessage": "Frank Zappa s'est presque présenté à la présidence des États-Unis.",
+                    "answer": "vrai",
+                    "answerMessage": "Il y songeait fortement et en avait même parlé en entrevue en 1990 et en 1991. Malheureusement, un diagnostic de cancer de la prostate est venu contrecarrer ses plans. "
+                },
+                {
+                    "idQuestion": 3,
+                    "questionMessage": "Bono, de son vrai nom Paul Hewson, tient son nom d'artiste d'une boutique d'appareils auditifs de Dublin.",
+                    "answer": "vrai",
+                    "answerMessage": "«Bonavox», qui signifie «Bonne voix» en latin, est le nom d'une boutique toujours en opération aujourd'hui."
+                },
+                {
+                    "idQuestion": "4",
+                    "questionMessage": "Le vrai nom d'Elton John est Reginald Kenneth Dwight.",
+                    "answer": "vrai",
+                    "answerMessage": "Et c'est pour ce genre de situation que les artistes se donnent le droit d'adopter un nom de scène."
+                }
+            ]
+        }
+    ]
+}
+ 

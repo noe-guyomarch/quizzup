@@ -48,7 +48,7 @@
             })
             .fail(function(data) {
                 console.log(data);
-                $('body').html('Erreur du coté serveur. /r Envoyez un mail a ' + data.mail + ' pour plus plus d\'informations.');
+                $('body').html('Erreur du coté serveur. <br/> Envoyez un mail au proprietaire du site pour plus plus d\'informations.');
             });
             return false;
         })

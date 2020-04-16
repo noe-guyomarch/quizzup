@@ -2,25 +2,9 @@
     'use strict';
     $(() =>{
         // TODO  gérer les clicks de l'utilisateur sur les quiz avec des appel ajax
-        $('.item').click(function() {
-            let afficher = $(this).attr('idQuiz');
-            // window.location.search = "idQuiz=" + afficher;
-            $.ajax({
-                url: 'json/quizManager.php',
-                method: 'GET'
-            })
-            .done(function(data) {
-                // console.log(typeof(data.retour));
-                // console.log(data.fonctionne);
-                console.log(data.retour);
-            })
-            .fail(function(){
-                console.log(afficher);
-            })
-        })
         
         //
-        function fillQuizContainer(idQuizContainer, nbItemContainer, imgSources){
+        function fillQuizContainer(idQuizContainer, nbItemContainer, imgSources, quizName){
             for (let i = 0; i < nbItemContainer; ++i) {
                 $('#'+ idQuizContainer).append(
                     $('<div />')
@@ -29,7 +13,7 @@
                         $('<div />')
                         .attr({
                             class: 'item',
-                            idQuiz: i
+                            'quizName': quizName[i]
                         })
                         .append(
                             $('<img />')
@@ -43,8 +27,8 @@
             }
         }
 
-        // remplir le document modulairement
-        function fillDocument(numSection, nbSectionContainer, nbItemContainer, imgSources){
+        // remplir le document modulairement avec les QuizContainer
+        function fillDocument(numSection, nbSectionContainer, nbItemContainer, imgSources, quizName){
             for (let i = 0; i < nbSectionContainer; ++i) {
                 
                 let idQuizContainer = 'quizContainer' + numSection;
@@ -69,14 +53,20 @@
                     )
                 )
 
-                fillQuizContainer(idQuizContainer, nbItemContainer, imgSources)
+                fillQuizContainer(idQuizContainer, nbItemContainer, imgSources, quizName)
             }
         }
 
+        let quizName = ["bigflo", "famoustreet", "rockstar"]
         let sources = ["src\\img\\bigflo_1200x800_v4.jpg", "src\\img\\famousstreet_FR.jpg", "src\\img\\rockstars_1200x800_v1_FR.jpg"]
 
-        fillDocument(1, 1, 3, sources);
-        fillDocument(2, 1, 3, sources);
+        fillDocument(1, 1, 3, sources, quizName);
+
+
+        $('.item').click(function() {
+            let name = $(this).attr('quizName');
+            window.location.href = 'quizPage.html?quizName='+ name + "&numQuestion=0";
+        })
 
 
         
